@@ -1,6 +1,10 @@
 # api
 An "API" that serves no proper purpose other than random tat
 
+## Info:
+Find the status of `api.mrrazamataz.ga` under "RazasVPS" [here](https://status.mrrazamataz.ga/).
+
+
 ## Endpoints:  
 
 ### yturl:  
