@@ -1,6 +1,6 @@
 # API testing at api.mrrazamataz.ga
 import urllib.parse, urllib.request, re
-from flask import Flask, request, abort, jsonify
+from flask import Flask, request, abort, jsonify, redirect
 import json, sqlite3, requests
 
 app = Flask(__name__)
@@ -31,6 +31,11 @@ def yturl():
         return result
     else:
         abort(400)
+
+
+@app.route('/', methods=['GET'])
+def root():
+    return redirect("https://github.com/MrRazamataz/api", code=302)
 
 
 if __name__ == '__main__':
